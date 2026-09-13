@@ -1,0 +1,208 @@
+/* =============================================
+   MEMBERSHIP PAGE
+   ============================================= */
+
+/* ── Hero ─────────────────────────────────── */
+.membership-hero {
+  background: var(--white);
+}
+.membership-hero-container {
+  display: grid;
+  gap: calc(var(--g2-gap) * 1.4);
+  justify-items: center;
+  text-align: center;
+}
+.membership-hero-container p {
+  max-width: 85ch;
+}
+
+/* ── Stats Strip ──────────────────────────── */
+.membership-stats-strip {
+  background: var(--dark-green);
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 1.5rem;
+}
+.membership-stats-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 100% at 50% 110%, hsl(145, 69%, 18%) 0%, transparent 70%);
+  pointer-events: none;
+}
+.membership-stats-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+.membership-stat {
+  display: grid;
+  gap: 0.45rem;
+  text-align: center;
+}
+.membership-stat-number {
+  font-size: var(--h1-size);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+.membership-stat-label {
+  font-size: var(--label-size);
+  font-weight: 600;
+  color: var(--off-grey);
+  letter-spacing: 0.1em;
+}
+.membership-stat-divider {
+  width: 1px;
+  height: 3rem;
+  background: rgba(255,255,255,0.15);
+  display: none;
+}
+
+/* ── Logo Section ─────────────────────────── */
+.logo-section {
+  background: var(--off-grey);
+  display: grid;
+  gap: var(--g4-gap);
+}
+.logo-section-header {
+  display: grid;
+  gap: var(--g1-gap);
+}
+.logo-section-header h2 {
+  letter-spacing: -0.025em;
+}
+
+.logo-grid {
+  display: grid;
+  gap: var(--g2-gap);
+}
+.logo-cell {
+  padding: 1.25rem;
+  border-radius: var(--border-radius);
+  background: var(--white);
+  border: 1.5px solid var(--grey);
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  width: 100%;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.logo-image {
+  height: 4.5rem;
+  width: 4.5rem;
+  flex-shrink: 0;
+  object-fit: contain;
+  object-position: center;
+}
+.msa-name-container {
+  display: grid;
+  gap: 0.5rem;
+}
+.msa-name {
+  font-size: var(--small-size);
+  font-weight: 600;
+  color: var(--black);
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+.msa-membership-status {
+  font-size: var(--label-size);
+  font-weight: 600;
+  color: var(--dark-grey);
+  background: var(--light-grey);
+  padding: 0.2rem 0.6rem;
+  border: 1.5px solid var(--grey);
+  border-radius: var(--button-border-radius);
+  width: fit-content;
+  letter-spacing: 0.02em;
+}
+
+/* ── Disclaimer ───────────────────────────── */
+.membership-disclaimer {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--grey);
+}
+.membership-disclaimer h3 {
+  font-size: var(--small-size);
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: -0.01em;
+}
+.disclaimers-wrap {
+  display: grid;
+  gap: 0.75rem;
+}
+.disclaimer-statement {
+  font-size: var(--small-size);
+  color: var(--dark-grey);
+  line-height: 1.6;
+}
+
+/* ── Tablet ───────────────────────────────── */
+@media (min-width: 768px) {
+  .membership-stats-strip {
+    padding: 3.5rem 3rem;
+  }
+  .membership-stats-inner {
+    gap: 4rem;
+  }
+  .membership-stat-divider {
+    display: block;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* ── Desktop ──────────────────────────────── */
+@media (min-width: 1024px) {
+  .membership-stats-strip {
+    padding: 4rem 6rem;
+  }
+  .membership-stats-inner {
+    gap: 6rem;
+  }
+
+  .logo-section {
+    gap: 4rem;
+  }
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .logo-cell {
+    padding: 1.5rem;
+  }
+  .logo-cell:hover {
+    border-color: hsl(0,0%,65%);
+    box-shadow: var(--shadow);
+  }
+  .logo-image {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+  .msa-name {
+    font-size: var(--small-size);
+  }
+  .membership-disclaimer {
+    padding: 2rem;
+  }
+  .membership-disclaimer h3 {
+    font-size: var(--p-size);
+  }
+  .disclaimer-statement {
+    font-size: var(--p-size);
+  }
+}
