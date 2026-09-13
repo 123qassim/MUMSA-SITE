@@ -1,0 +1,288 @@
+/* =============================================
+   HOW TO REGISTER PAGE
+   ============================================= */
+
+.how-to-register-header {
+  height: 4rem;
+  padding: 0 1.5rem;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-content: start;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: var(--white);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+.how-to-register-header.scrolled {
+  border-bottom: 1px solid var(--grey);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
+}
+.section-header {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.section-header h2 {
+  font-size: var(--h2-size);
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* ── Hero ─────────────────────────────────── */
+.register-hero-section {
+  background: var(--white);
+}
+.register-hero-container {
+  display: grid;
+  gap: var(--g2-gap);
+  justify-items: center;
+  text-align: center;
+}
+.register-hero-container p {
+  max-width: 85ch;
+}
+
+/* ── Steps ────────────────────────────────── */
+.register-steps-section {
+  background: var(--off-grey);
+}
+.register-steps-container {
+  display: grid;
+}
+.register-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--g2-gap);
+  align-items: start;
+  padding: 2rem 0;
+}
+.register-step-number {
+  font-size: 0.8125rem;
+  font-weight: 800;
+  color: var(--dark-green);
+  letter-spacing: 0.06em;
+  background: var(--green-tint);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.65rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+.register-step-body {
+  display: grid;
+  gap: 0.625rem;
+}
+.register-step-body h2 {
+  font-size: var(--h3-size);
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: -0.015em;
+}
+.register-step-body p {
+  font-size: var(--p-size);
+  color: var(--dark-grey);
+  line-height: 1.7;
+}
+.register-step-body strong {
+  color: var(--black);
+  font-weight: 700;
+}
+.register-step-divider {
+  height: 1.5px;
+  background: var(--grey);
+  border-radius: 2px;
+}
+
+/* ── CTA ──────────────────────────────────── */
+.register-cta-section {
+  background: var(--dark-green);
+  position: relative;
+  overflow: hidden;
+}
+.register-cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 55% 45% at 50% -5%, hsl(145, 55%, 16%) 0%, transparent 100%);
+  pointer-events: none;
+}
+.register-cta-container {
+  display: grid;
+  gap: var(--g4-gap);
+  position: relative;
+  justify-items: center;
+  text-align: center;
+}
+.register-cta-copy {
+  display: grid;
+  gap: var(--g1-gap);
+}
+.register-cta-copy h2 {
+  color: var(--white);
+  letter-spacing: -0.025em;
+}
+.register-cta-copy p {
+  color: var(--grey);
+  font-size: var(--p-size);
+}
+.register-cta-container .button {
+  background: var(--white);
+  width: fit-content;
+}
+.register-cta-container .button span:first-child {
+  color: var(--dark-green);
+}
+.register-cta-container .button .button-icon-container i {
+  color: var(--dark-green);
+}
+.register-support-container {
+  display: grid;
+  gap: var(--g2-gap);
+  justify-items: center;
+  text-align: center;
+}
+.register-cta-sub {
+  font-size: var(--small-size);
+  color: var(--grey);
+}
+
+/* ── Registration Form ────────────────────── */
+.register-form-section {
+  background: var(--off-grey);
+}
+.register-form-shell {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.registration-form-card {
+  background: var(--white);
+  border-radius: var(--card-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.registration-form-intro {
+  display: grid;
+  gap: 0.5rem;
+}
+.registration-form-grid {
+  display: grid;
+  gap: 1rem;
+}
+.registration-field {
+  display: grid;
+  gap: 0.5rem;
+}
+.registration-field label,
+.payment-label {
+  font-size: var(--small-size);
+  font-weight: 700;
+  color: var(--black);
+}
+.registration-field small {
+  font-size: var(--small-size);
+  color: var(--dark-grey);
+}
+.registration-field input[type="text"],
+.registration-field input[type="number"],
+.registration-field select,
+.registration-field input[type="file"] {
+  width: 100%;
+  font: inherit;
+  color: var(--black);
+  background: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 0.9rem;
+}
+.registration-field input[type="text"],
+.registration-field input[type="number"],
+.registration-field select {
+  min-height: 3rem;
+  padding: 0.85rem 1rem;
+}
+.registration-field input[type="file"] {
+  padding: 0.85rem 1rem;
+}
+.registration-field input:focus,
+.registration-field select:focus {
+  outline: 2px solid transparent;
+  border-color: var(--dark-green);
+  box-shadow: 0 0 0 3px hsla(145, 69%, 25%, 0.12);
+}
+.required {
+  color: var(--danger);
+}
+.payment-block {
+  display: grid;
+  gap: 0.75rem;
+}
+.payment-info {
+  background: var(--distant-green);
+  border: 1px solid var(--green-tint);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  gap: 0.4rem;
+}
+.payment-info p {
+  font-size: var(--small-size);
+  color: var(--dark-grey);
+}
+.payment-info strong {
+  color: var(--black);
+}
+.registration-submit {
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  min-height: 3rem;
+}
+
+/* ── Tablet ───────────────────────────────── */
+@media (min-width: 768px) {
+  .how-to-register-header {
+    height: 5rem;
+    padding: 0 3rem;
+  }
+
+  .register-steps-container {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+  .register-step {
+    gap: 2rem;
+    padding: 2.5rem 0;
+  }
+
+  .registration-form-card {
+    padding: 2rem;
+  }
+}
+
+/* ── Desktop ──────────────────────────────── */
+@media (min-width: 1024px) {
+  .how-to-register-header {
+    padding: 0 6rem;
+  }
+
+  .register-steps-container {
+    max-width: 800px;
+  }
+  .register-step {
+    gap: 2.5rem;
+    padding: 3rem 0;
+  }
+  .registration-form-card {
+    padding: 2.5rem;
+  }
+  .register-cta-sub a:hover {
+    color: var(--white);
+  }
+}
