@@ -1,0 +1,145 @@
+/* =============================================
+   HOW TO REGISTER PAGE
+   ============================================= */
+
+
+main {
+  padding-top: 0;
+}
+
+/* ── Hero ─────────────────────────────────── */
+.register-hero-section {
+  background: var(--white);
+}
+.register-hero-container {
+  display: grid;
+  gap: var(--g2-gap);
+  justify-items: center;
+  text-align: center;
+}
+.register-hero-container p {
+  max-width: 85ch;
+}
+
+/* ── Steps ────────────────────────────────── */
+.register-steps-section {
+  background: var(--off-grey);
+}
+.register-steps-container {
+  display: grid;
+}
+.register-step {
+  display: grid;
+  gap: var(--g2-gap);
+  align-items: start;
+  padding: 2rem 0;
+}
+.register-step-body {
+  display: grid;
+  gap: 0.625rem;
+}
+.register-step-body h2 {
+  font-size: var(--h3-size);
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: -0.015em;
+}
+.register-step-body p {
+  font-size: var(--p-size);
+  color: var(--dark-grey);
+  line-height: 1.7;
+}
+.register-step-body strong {
+  color: var(--black);
+  font-weight: 700;
+}
+.register-step-divider {
+  height: 1.5px;
+  background: var(--grey);
+  border-radius: 2px;
+}
+
+/* ── CTA ──────────────────────────────────── */
+.register-cta-section {
+  background: var(--dark-green);
+  position: relative;
+  overflow: hidden;
+}
+
+.register-cta-container {
+  display: grid;
+  gap: var(--g4-gap);
+  position: relative;
+  justify-items: center;
+  text-align: center;
+}
+.register-cta-copy {
+  display: grid;
+  gap: var(--g1-gap);
+}
+.register-cta-copy h2 {
+  color: var(--white);
+  letter-spacing: -0.025em;
+}
+.register-cta-copy p {
+  color: var(--off-grey);
+  font-size: var(--p-size);
+}
+.register-cta-container .button {
+  background: var(--white);
+  width: fit-content;
+}
+.register-cta-container .button span:first-child {
+  color: var(--dark-green);
+}
+.register-cta-container .button .button-icon-container i {
+  color: var(--dark-green);
+}
+.register-support-container {
+  display: grid;
+  gap: var(--g2-gap);
+  justify-items: center;
+  text-align: center;
+}
+.register-support-container > .button > .reg-form-action span {
+  color: var(--black);
+}
+.register-cta-sub {
+  font-size: var(--small-size);
+  color: var(--off-grey);
+}
+
+/* ── Tablet ───────────────────────────────── */
+@media (min-width: 768px) {
+  .how-to-register-header {
+    height: 5rem;
+    padding: 0 3rem;
+  }
+
+  .register-steps-container {
+    margin: 0 auto;
+    max-width: 85%;
+  }
+  .register-step {
+    gap: 2rem;
+    padding: 2.5rem 0;
+  }
+}
+
+/* ── Desktop ──────────────────────────────── */
+@media (min-width: 1024px) {
+  .how-to-register-header {
+    padding: 0 6rem;
+  }
+
+  .register-steps-container {
+    max-width: 800px;
+  }
+  .register-step {
+    gap: 2.5rem;
+    padding: 3rem 0;
+  }
+  .register-cta-sub a:hover {
+    color: var(--white);
+  }
+}
