@@ -22,6 +22,17 @@
 .events-toolbar h2 {
   max-width: 22ch;
 }
+.events-toolbar__actions {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+.events-calendar-download {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  white-space: nowrap;
+}
 .event-filter-label {
   display: grid;
   gap: .45rem;
@@ -161,8 +172,16 @@
   .events-toolbar {
     display: block;
   }
-  .event-filter-label {
+  .events-toolbar__actions {
+    display: grid;
+    gap: 1.5rem;
     margin-top: 1.5rem;
+  }
+  .events-calendar-download {
+    justify-content: center;
+  }
+  .event-filter-label {
+    margin-top: 0;
   }
   .event-filter-label select {
     width: 100%;

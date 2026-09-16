@@ -43,9 +43,12 @@
     <section class="section events-catalogue" aria-labelledby="events-title">
       <div class="events-toolbar">
         <div><span class="section-kicker">Event calendar</span><h2 id="events-title">What is happening in our community.</h2></div>
-        <label class="event-filter-label" for="event-category">Filter events
-          <select id="event-category"><option value="all">All categories</option></select>
-        </label>
+        <div class="events-toolbar__actions">
+          <a class="button alt-button events-calendar-download" href="../assets/documents/mumsa-semester-calendar-sept-nov-2026.pdf" download><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i><span>Semester calendar (PDF)</span></a>
+          <label class="event-filter-label" for="event-category">Filter events
+            <select id="event-category"><option value="all">All categories</option></select>
+          </label>
+        </div>
       </div>
       <div id="events-grid" class="events-grid" aria-live="polite"></div>
     </section>
