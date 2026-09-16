@@ -8,6 +8,61 @@
 .programmes-hero p {
   max-width: 58ch;
 }
+.programmes-path {
+  background: var(--white);
+}
+.programmes-path__heading {
+  max-width: 42rem;
+  margin-bottom: 2rem;
+}
+.programmes-path__heading h2 {
+  margin: .5rem 0 .75rem;
+}
+.programmes-path__heading p {
+  color: var(--dark-grey);
+}
+.programmes-path__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.programmes-path__steps li {
+  position: relative;
+  min-height: 15rem;
+  padding: 1.35rem;
+  border: 1px solid var(--grey);
+  border-radius: var(--card-radius);
+  background: var(--surface-alt);
+}
+.programmes-path__number {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: var(--vivid-green);
+  font-size: var(--label-size);
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+.programmes-path__steps i {
+  color: var(--dark-green);
+  font-size: 1.5rem;
+}
+.programmes-path__steps h3 {
+  margin: .85rem 0 .5rem;
+  font-size: var(--h3-size);
+}
+.programmes-path__steps p {
+  color: var(--dark-grey);
+  font-size: var(--small-size);
+}
+.programmes-path__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.5rem;
+}
 .programmes-catalogue {
   max-width: 82rem;
   margin: 0 auto;
@@ -144,9 +199,15 @@
   .programme-card-grid {
     grid-template-columns: 1fr;
   }
+  .programmes-path__steps {
+    grid-template-columns: 1fr;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .programme-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .programmes-path__steps {
     grid-template-columns: repeat(2, 1fr);
   }
 }
