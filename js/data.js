@@ -99,11 +99,12 @@ export const resourceData = [
 ];
 
 export const prayerTimetable = [
-  { prayer: 'Fajr', adhan: null, congregation: null, note: 'Daily prayer' },
-  { prayer: 'Dhuhr', adhan: null, congregation: null, note: 'Daily prayer' },
-  { prayer: 'Asr', adhan: null, congregation: null, note: 'Daily prayer' },
-  { prayer: 'Maghrib', adhan: null, congregation: null, note: 'At sunset' },
-  { prayer: 'Isha', adhan: null, congregation: null, note: 'Daily prayer' }
+  { prayer: 'Fajr', adhan: '05:40', congregation: '05:50', note: 'Daily prayer' },
+  { prayer: 'Jumu\'ah', adhan: '12:10', congregation: 'Khutbah: 12:40', note: 'Friday only' },
+  { prayer: 'Dhuhr', adhan: '13:00', congregation: '13:15', note: 'Weekdays' },
+  { prayer: 'Asr', adhan: '16:00', congregation: '16:15', note: 'Daily prayer' },
+  { prayer: 'Maghrib', adhan: '18:50', congregation: '18:55', note: 'Daily prayer' },
+  { prayer: 'Isha', adhan: '20:00', congregation: '20:15', note: 'Daily prayer' }
 ];
 
 export const darsaSchedule = [
@@ -117,8 +118,8 @@ export const quranProgrammes = [
 ];
 
 export const announcements = [
-  { title: 'Current masjid notices', detail: 'Official announcements will be published here.' },
-  { title: 'Prayer timetable updates', detail: 'Confirm daily changes through the masjid noticeboard or MUMSA announcements.' }
+  { title: 'Pray on time', detail: 'Delaying salah carries immense weight. Let us strive to observe every prayer at its appointed time. May Allah keep us steadfast. Tujitahidi tuwe ni wenye kusali kila sala kwa wakati wake.' },
+  { title: 'Current prayer timetable', detail: 'The timetable above is the latest official schedule. Please check the masjid noticeboard or MUMSA announcements for any changes.' }
 ];
 
 export const masjidActivities = [
