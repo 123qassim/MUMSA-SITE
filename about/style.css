@@ -6,6 +6,47 @@ html {
   scroll-behavior: auto;
 }
 
+.about-page { background: var(--surface); }
+.about-intro { display: grid; grid-template-columns: 1.25fr .75fr; align-items: center; gap: 4rem; background: linear-gradient(135deg, var(--distant-green), var(--white)); }
+.about-intro__copy { max-width: 48rem; }
+.about-intro h1 { max-width: 14ch; margin: .75rem 0 1rem; }
+.about-intro p { max-width: 62ch; color: var(--dark-grey); }
+.about-intro__mark { display: grid; place-items: center; min-height: 18rem; background: var(--dark-green); border-radius: var(--card-radius); }
+.about-intro__mark img { width: 12rem; height: 12rem; object-fit: contain; border-radius: 1rem; }
+.about-content-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.about-info-card { padding: 2rem; border: 1px solid var(--grey); border-radius: var(--card-radius); background: var(--white); box-shadow: var(--shadow); }
+.about-info-card--wide { grid-column: 1 / -1; }
+.about-info-card--accent { background: var(--green-tint); border-color: var(--light-green); }
+.about-info-card h2 { max-width: 18ch; margin-bottom: .75rem; }
+.about-info-card p, .objective-grid p, .about-history p, .about-university p, .about-commitment p { color: var(--dark-grey); }
+.about-objectives { background: var(--surface-alt); }
+.section-heading { max-width: 80rem; margin: 0 auto 2rem; }
+.objective-grid { max-width: 80rem; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.objective-grid > div { padding: 1.5rem; background: var(--white); border: 1px solid var(--grey); border-radius: var(--card-radius); }
+.objective-grid i { color: var(--vivid-green); font-size: 1.4rem; margin-bottom: 1.5rem; }
+.objective-grid h3 { margin-bottom: .5rem; }
+.objective-grid p { font-size: var(--small-size); }
+.about-values-history { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.about-values h2, .about-history h2, .about-university h2, .about-commitment h2 { max-width: 18ch; margin-bottom: 1.25rem; }
+.values-list { display: grid; gap: 0; margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.values-list li { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--grey); }
+.values-list strong { color: var(--dark-green); }
+.values-list span { color: var(--dark-grey); font-size: var(--small-size); }
+.about-university { display: grid; grid-template-columns: .8fr 1.2fr; gap: 4rem; align-items: start; background: var(--dark-green); }
+.about-university h2, .about-university p { color: var(--white); }
+.about-university p { opacity: .88; }
+.about-commitment { text-align: center; background: var(--green-tint); }
+.about-commitment h2 { max-width: 22ch; margin-left: auto; margin-right: auto; }
+.about-commitment p { max-width: 52ch; margin: 0 auto 1.5rem; }
+@media (max-width: 767px) {
+  .about-intro, .about-values-history, .about-university { display: block; }
+  .about-intro__mark { margin-top: 2rem; min-height: 14rem; }
+  .about-content-grid, .objective-grid { grid-template-columns: 1fr; }
+  .about-info-card--wide { grid-column: auto; }
+  .about-values, .about-history, .about-university > p { margin-top: 2.5rem; }
+  .values-list li { grid-template-columns: 1fr; gap: .25rem; }
+}
+
 /* ── Hero ─────────────────────────────────── */
 .about-hero-section {
   background: var(--white);

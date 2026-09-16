@@ -3,7 +3,7 @@
    ============================================= */
 
 .footer {
-  background: var(--black);
+  background: var(--ink);
   color: var(--white);
   padding: var(--section-padding);
 }
@@ -35,7 +35,9 @@
   width: auto;
   flex-shrink: 0;
   /* filter: brightness(0) invert(1); */ /* Making the logo on footer to be covered and hence not visible */
-  opacity: 0.9;
+  opacity: 0.95;
+  border-radius: 0.6rem;
+  object-fit: contain;
 }
 .footer-brand-details {
   display: grid;

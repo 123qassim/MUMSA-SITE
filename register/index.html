@@ -1,114 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Join MUMSA at Maseno University and take part in our faith, welfare, leadership and service programmes.">
-
+  <meta name="description" content="Register your interest in joining the Maseno University Muslim Students' Association.">
+  <meta name="author" content="Maseno University Muslim Students' Association">
+  <meta name="robots" content="index, follow">
   <meta property="og:title" content="Join MUMSA | Maseno University">
-  <meta property="og:description" content="Join MUMSA at Maseno University and take part in our faith, welfare, leadership and service programmes.">
-  <meta property="og:url" content="index.html">
+  <meta property="og:description" content="Register your interest in joining MUMSA and connecting with the Muslim student community at Maseno University.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="MUMSA">
-  <meta property="og:image" content="../assets/images/about.jpeg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:locale" content="en_KE">
-
-  <!-- Twitter / X -->
+  <meta property="og:url" content="https://123qassim.github.io/MUMSA-SITE/register/">
+  <meta property="og:image" content="../assets/images/MUMSA%20Logo.jpeg">
+  <meta property="og:image:alt" content="Official MUMSA logo">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Join MUMSA | Maseno University">
-  <meta name="twitter:description" content="Join MUMSA at Maseno University and take part in our faith, welfare, leadership and service programmes.">
-  <meta name="twitter:image" content="../assets/images/about.jpeg">
-
-  <link rel="canonical" href="index.html">
-
-  <!-- Favicon -->
+  <meta name="twitter:description" content="Register your interest in joining the Muslim Students Association at Maseno University.">
+  <meta name="twitter:image" content="../assets/images/MUMSA%20Logo.jpeg">
+  <meta name="twitter:image:alt" content="Official MUMSA logo">
+  <link rel="canonical" href="https://123qassim.github.io/MUMSA-SITE/register/">
   <link rel="apple-touch-icon" href="../assets/images/MUMSA%20Logo.jpeg">
   <link rel="icon" type="image/jpeg" href="../assets/images/MUMSA%20Logo.jpeg">
   <link rel="manifest" href="../mumsa-favicon/site.webmanifest">
-
   <title>Join MUMSA | Maseno University</title>
-
-  <!-- CSS Files -->
   <link rel="stylesheet" href="../css/root.css">
+  <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="style.css">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-
 <body>
-
-  <main>
-
-    <!-- ── Hero ─────────────────────────────── -->
-    <section class="section register-hero-section">
-      <div class="register-hero-container">
-        <h1>Register Your Association</h1>
-        <p>Join MUMSA to participate in student engagements at Maseno University and contribute to a stronger, more connected Muslim student community.</p>
-      </div>
+  <div class="body-overlay js-body-overlay"></div>
+  <header class="navbar js-desktop-navbar"></header>
+  <div class="js-mobile-navbar"></div>
+  <main class="register-page">
+    <section class="section register-hero"><span class="section-kicker">Join MUMSA</span><h1>Find your community at Maseno.</h1><p>Register your interest in MUMSA and connect with opportunities for faith, learning, welfare, leadership and service.</p></section>
+    <section class="section register-form-section" aria-labelledby="registration-heading">
+      <div class="register-form-intro"><span class="section-kicker">Membership registration</span><h2 id="registration-heading">Tell us a little about yourself.</h2><p>This frontend form is ready to connect to a secure backend or database. It does not currently send or save submissions.</p></div>
+      <form class="registration-form" id="mumsa-registration-form" action="#" method="post" novalidate>
+        <div class="form-grid">
+          <label>Full Name <input name="fullName" type="text" autocomplete="name" required></label>
+          <label>Admission Number <input name="admissionNumber" type="text" autocomplete="off" required></label>
+          <label>Course/Programme <input name="courseProgramme" type="text" required></label>
+          <label>Year of Study <select name="yearOfStudy" required><option value="">Select year</option><option>First Year</option><option>Second Year</option><option>Third Year</option><option>Fourth Year</option><option>Postgraduate</option><option>Other</option></select></label>
+          <label>Gender <select name="gender" required><option value="">Select an option</option><option>Male</option><option>Female</option><option>Prefer not to say</option></select></label>
+          <label>Phone Number <input name="phoneNumber" type="tel" autocomplete="tel" required></label>
+          <label>Email <input name="email" type="email" autocomplete="email" required></label>
+          <label>Hostel/Residence <input name="residence" type="text" autocomplete="street-address" required></label>
+          <label class="form-field--wide">Optional emergency/welfare contact <input name="emergencyContact" type="text" placeholder="Name and phone number, if you wish to provide one"></label>
+          <label class="form-field--wide">How did you hear about MUMSA? <select name="referral"><option value="">Select an option</option><option>Friend or MUMSA member</option><option>Maseno Masjid</option><option>MUMSA event or programme</option><option>First-Year Hub</option><option>Social media</option><option>Other</option></select></label>
+        </div>
+        <label class="consent-field"><input name="consent" type="checkbox" required><span>I consent to this information being submitted for MUMSA membership and student community purposes. I understand that the form is currently frontend-only and no information will be sent or stored until a secure backend is connected.</span></label>
+        <button class="button" type="submit"><span>Submit registration interest</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
-
-    <!-- ── Steps ──────────────────────────────── -->
-    <section class="section register-steps-section">
-      <div class="register-steps-container">
-
-        <div class="register-step">
-          <div class="register-step-body">
-            <h2>Eligibility</h2>
-            <p>Any Muslim student at Maseno University who wants to learn, serve, grow and connect with the Muslim community is welcome.</p>
-          </div>
-        </div>
-
-        <div class="register-step-divider"></div>
-
-        <div class="register-step">
-          <div class="register-step-body">
-            <h2>Membership Fee</h2>
-            <p>There is no separate registration fee. Participate in MUMSA activities and follow our announcements for programme-specific contributions where applicable.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ── CTA ────────────────────────────────── -->
-    <section class="section register-cta-section">
-      <div class="register-cta-container">
-        <div class="register-cta-copy">
-          <h2>Ready to Join?</h2>
-          <p>Fill out the registration form to complete the onboarding process.</p>
-        </div>
-        <div class="register-support-container">
-          <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdvTIUfmy3f_XcVKSVu3iICNP6TXKAMnma9VJwUx1DkB8e7eQ/formResponse" rel="noopener noreferrer" target="_blank">
-            <span class="reg-form-action">Registration Form</span>
-            
-          </a>
-          <p class="register-cta-sub">Questions? Reach out to us and we'll help you through the process.</p>
-        </div>
-      </div>
-    </section>
-
+    <section class="section register-privacy"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><div><h2>Your information matters.</h2><p>When this form is connected to a backend, MUMSA should use secure transmission, access controls and a clear retention policy for membership and welfare information.</p></div></section>
   </main>
-
-  <footer class="footer js-footer">
-    <!-- Code to be injected by the JavaScript Footer component -->
-  </footer>
-
+  <footer class="footer js-footer"></footer>
+  <script type="module" src="script.js"></script>
   <script type="module" src="../js/main.js"></script>
-  <script src="script.js"></script>
-
 </body>
 </html>

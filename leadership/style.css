@@ -1,0 +1,133 @@
+.leadership-hero {
+  background: linear-gradient(135deg, var(--distant-green), var(--white));
+}
+.leadership-hero h1 {
+  max-width: 14ch;
+  margin: .75rem 0 1rem;
+}
+.leadership-hero p {
+  max-width: 58ch;
+}
+.leadership-intro, .leadership-roster__heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.leadership-intro > div, .leadership-roster__heading > div {
+  flex: 1;
+}
+.leadership-intro h2, .leadership-roster__heading h2 {
+  max-width: 18ch;
+}
+.leadership-intro > p {
+  max-width: 38rem;
+}
+.leadership-roster {
+  max-width: 82rem;
+  margin: 0 auto;
+  background: var(--surface-alt);
+}
+.leadership-roster__heading {
+  margin-bottom: 2rem;
+}
+.leadership-note {
+  max-width: 27rem;
+  padding: .9rem 1rem;
+  border-left: 3px solid var(--light-green);
+  color: var(--dark-grey);
+  font-size: var(--small-size);
+}
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.leader-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 23rem;
+  border: 1px solid var(--grey);
+  border-radius: var(--card-radius);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+.leader-card__photo {
+  height: 11rem;
+  display: grid;
+  place-items: center;
+  background: var(--green-tint);
+  color: var(--dark-green);
+  font-size: 3rem;
+}
+.leader-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.35rem;
+}
+.leader-card__status {
+  align-self: start;
+  padding: .35rem .55rem;
+  border-radius: 999px;
+  background: var(--green-tint);
+  color: var(--dark-green);
+  font-size: var(--label-size);
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.leader-card h3 {
+  margin: .75rem 0 .3rem;
+}
+.leader-card__office {
+  color: var(--dark-green);
+  font-size: var(--small-size);
+  font-weight: 700;
+}
+.leader-card__responsibility {
+  margin-top: .75rem;
+  font-size: var(--small-size);
+}
+.leader-card__action {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+.leadership-commitment {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: var(--dark-green);
+}
+.leadership-commitment i {
+  color: var(--light-green);
+  font-size: 3rem;
+}
+.leadership-commitment h2, .leadership-commitment p {
+  color: var(--white);
+}
+.leadership-commitment p {
+  max-width: 58ch;
+  opacity: .88;
+}
+@media (max-width: 767px) {
+  .leadership-intro, .leadership-roster__heading, .leadership-commitment {
+    display: block;
+  }
+  .leadership-intro > p, .leadership-note {
+    margin-top: 1.5rem;
+  }
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+  .leadership-commitment i {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

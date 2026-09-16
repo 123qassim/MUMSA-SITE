@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prayer, learning and community information for Maseno Masjid.">
+  <meta name="author" content="Maseno University Muslim Students' Association">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Maseno Masjid | MUMSA">
+  <meta property="og:description" content="Prayer, learning and community information for Maseno Masjid.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MUMSA">
+  <meta property="og:url" content="https://123qassim.github.io/MUMSA-SITE/maseno-masjid/">
+  <meta property="og:image" content="../assets/images/MUMSA%20Logo.jpeg">
+  <meta property="og:image:alt" content="Official MUMSA logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maseno Masjid | MUMSA">
+  <meta name="twitter:description" content="Prayer, Islamic learning and community information for Maseno Masjid at Maseno University.">
+  <meta name="twitter:image" content="../assets/images/MUMSA%20Logo.jpeg">
+  <meta name="twitter:image:alt" content="Official MUMSA logo">
+  <link rel="canonical" href="https://123qassim.github.io/MUMSA-SITE/maseno-masjid/">
+  <link rel="apple-touch-icon" href="../assets/images/MUMSA%20Logo.jpeg">
+  <link rel="icon" type="image/jpeg" href="../assets/images/MUMSA%20Logo.jpeg">
+  <link rel="manifest" href="../mumsa-favicon/site.webmanifest">
+  <title>Maseno Masjid | MUMSA</title>
+  <link rel="stylesheet" href="../css/root.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+  <div class="body-overlay js-body-overlay"></div>
+  <header class="navbar js-desktop-navbar"></header>
+  <div class="js-mobile-navbar"></div>
+  <main class="masjid-page">
+    <section class="section masjid-hero">
+      <div class="masjid-hero__copy"><span class="section-kicker">Maseno Masjid</span><h1>A place to pray, learn and belong.</h1><p>Maseno Masjid is a spiritual home for Muslim students and the wider university community. Find current prayer information, Islamic learning opportunities and masjid updates in one calm, welcoming space.</p><div class="masjid-hero__links"><a class="button" href="#prayer-times"><span>View prayer timetable</span></a><a class="button alt-button" href="#directions"><span>Find the masjid</span></a></div></div>
+      <div class="masjid-hero__mark" aria-hidden="true"><i class="fa-solid fa-mosque"></i><span>Faith · Reflection · Community</span></div>
+    </section>
+    <section class="section masjid-prayer-section" id="prayer-times">
+      <div class="masjid-section-heading"><span class="section-kicker">Prayer timetable</span><h2>Plan your day around salah.</h2><p>Times below are ready to be updated from an admin panel or API. Please confirm the current timetable on the masjid noticeboard or through official MUMSA announcements.</p></div>
+      <div class="prayer-table-wrap"><table class="prayer-table"><caption>Maseno Masjid daily prayer timetable</caption><thead><tr><th scope="col">Prayer</th><th scope="col">Adhan</th><th scope="col">Jama'ah</th><th scope="col">Note</th></tr></thead><tbody class="js-prayer-timetable"></tbody></table></div>
+      <p class="masjid-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Timetable status: <strong>To be confirmed</strong></p>
+    </section>
+    <section class="section masjid-info-grid">
+      <article class="masjid-info-card masjid-info-card--accent"><i class="fa-solid fa-people-group" aria-hidden="true"></i><span class="section-kicker">Jumu'ah information</span><h2>Gather for the Friday prayer.</h2><p>Join the Muslim community for Jumu'ah at Maseno Masjid. The khutbah and prayer time should be confirmed from the latest official masjid announcement.</p><span class="masjid-pending">Jumu'ah time: to be published</span></article>
+      <article class="masjid-info-card"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span class="section-kicker">Location and directions</span><h2>Make your way to the masjid.</h2><p>Use the campus direction points below and ask a MUMSA member or the masjid community if you need help finding the route.</p><a class="text-link" href="#directions">View directions <span aria-hidden="true">↓</span></a></article>
+    </section>
+    <section class="section masjid-schedules" id="learning"><div class="masjid-section-heading"><span class="section-kicker">Learning at the masjid</span><h2>Keep learning together.</h2></div><div class="masjid-schedule-grid"><article class="masjid-schedule-card"><i class="fa-solid fa-book-open" aria-hidden="true"></i><h3>Darsa schedule</h3><p>Regular reminders and lessons provide space to reflect, ask questions and grow in beneficial knowledge.</p><div class="schedule-list js-darsa-schedule"></div></article><article class="masjid-schedule-card"><i class="fa-solid fa-quran" aria-hidden="true"></i><h3>Qur'an programmes</h3><p>Join Qur'an reading, memorisation and recitation activities when they are announced.</p><div class="schedule-list js-quran-programmes"></div></article></div></section>
+    <section class="section masjid-updates-section"><div class="masjid-section-heading"><span class="section-kicker">Stay informed</span><h2>Masjid announcements and activities.</h2></div><div class="masjid-updates-grid"><div><h3>Announcements</h3><div class="announcement-list js-announcements"></div></div><div><h3>Masjid activities</h3><div class="activity-list js-masjid-activities"></div></div></div></section>
+    <section class="section masjid-guidance" id="directions"><div class="masjid-guidance__copy"><span class="section-kicker">Location and directions</span><h2>Find your way with ease.</h2><p>The masjid is located within the Maseno University community. For the most accurate route, use the university grounds, ask at an official campus point or contact MUMSA before travelling.</p><a class="button" href="../contact/index.html"><span>Contact MUMSA</span></a></div><div class="masjid-direction-card"><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i><h3>Directions</h3><p>Exact map details and a campus route guide will be published after they are verified.</p><span class="masjid-pending">Location guide: to be confirmed</span></div></section>
+    <section class="section masjid-rules"><div class="masjid-section-heading"><span class="section-kicker">Masjid guidelines</span><h2>Respect the house of Allah.</h2></div><div class="guideline-grid"><div><i class="fa-solid fa-volume-xmark" aria-hidden="true"></i><p>Keep phones quiet and maintain a peaceful environment for worship.</p></div><div><i class="fa-solid fa-shirt" aria-hidden="true"></i><p>Dress modestly and observe the etiquette of the masjid.</p></div><div><i class="fa-solid fa-broom" aria-hidden="true"></i><p>Keep the prayer spaces, ablution areas and surrounding grounds clean.</p></div><div><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i><p>Respect worshippers, volunteers, university policies and masjid instructions.</p></div></div></section>
+  </main>
+  <footer class="footer js-footer"></footer>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

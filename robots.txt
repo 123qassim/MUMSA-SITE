@@ -62,4 +62,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: sitemap.xml
+Sitemap: https://123qassim.github.io/MUMSA-SITE/sitemap.xml

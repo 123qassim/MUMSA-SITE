@@ -82,6 +82,21 @@
   display: grid;
   gap: var(--g2-gap);
 }
+.membership-opportunity {
+  padding: 1.5rem;
+  border: 1px solid var(--grey);
+  border-left: 4px solid var(--vivid-green);
+  border-radius: var(--card-radius);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+.membership-opportunity h3 {
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+.membership-opportunity p {
+  font-size: var(--small-size);
+}
 .logo-cell {
   padding: 1.25rem;
   border-radius: var(--border-radius);

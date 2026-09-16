@@ -206,7 +206,7 @@
   background: var(--white);
 }
 
-/* ── MSAs Section ─────────────────────────── */
+/* ── Community Section ────────────────────── */
 .msas-section {
   background: var(--off-grey);
 }
@@ -253,6 +253,70 @@
 }
 
 /* ── Activities Section ───────────────────── */
+
+.mumsa-hero {
+  min-height: 38rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.8fr);
+  gap: 4rem;
+  background: linear-gradient(135deg, var(--distant-green), var(--white));
+}
+.mumsa-hero__content { max-width: 48rem; }
+.mumsa-hero h1 { max-width: 12ch; margin: 1rem 0; }
+.mumsa-hero__content > p:not(.mumsa-hero__motto) { max-width: 62ch; color: var(--dark-grey); }
+.mumsa-hero__motto { color: var(--dark-green); font-size: 1.2rem; font-weight: 700; letter-spacing: .08em; }
+.mumsa-hero__motto span { color: var(--vivid-green); padding: 0 .35rem; }
+.mumsa-hero__visual {
+  position: relative; min-height: 21rem; display: grid; place-items: center;
+  overflow: hidden; border-radius: var(--card-radius); background: var(--dark-green); color: var(--white);
+  text-align: center; box-shadow: var(--shadow-md);
+}
+.mumsa-hero__visual img { position: relative; z-index: 1; width: 11rem; height: 11rem; object-fit: contain; border-radius: 1rem; }
+.mumsa-hero__visual span { position: relative; z-index: 1; font-weight: 700; letter-spacing: .04em; }
+.mumsa-hero__orb { position: absolute; width: 26rem; height: 26rem; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; }
+.home-section { max-width: 80rem; margin: 0 auto; }
+.home-section--welcome, .section-heading--row { display: flex; justify-content: space-between; gap: 3rem; align-items: end; }
+.home-section__intro, .home-section__copy { flex: 1; }
+.section-kicker { display: block; color: var(--dark-green); font-size: var(--label-size); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; margin-bottom: .75rem; }
+.home-section h2, .first-year-section h2, .join-section h2 { max-width: 20ch; }
+.home-section__copy { max-width: 38rem; color: var(--dark-grey); }
+.text-link, .event-card a { color: var(--dark-green); font-weight: 700; }
+.text-link span, .event-card a span { color: var(--vivid-green); }
+.home-section--areas, .home-section--news { background: var(--surface-alt); max-width: none; }
+.home-section--areas > *, .home-section--news > * { max-width: 80rem; margin-left: auto; margin-right: auto; }
+.section-heading { margin-bottom: 2rem; }
+.section-heading h2 { margin: 0; }
+.core-area-grid, .event-grid, .news-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.core-area-card, .event-card, .news-card { padding: 1.5rem; border: 1px solid var(--grey); border-radius: var(--card-radius); background: var(--white); box-shadow: var(--shadow); }
+.core-area-card i { color: var(--vivid-green); font-size: 1.5rem; margin-bottom: 2rem; }
+.core-area-card h3, .event-card h3, .news-card h3 { margin-bottom: .65rem; }
+.core-area-card p, .event-card p, .news-card p { color: var(--dark-grey); font-size: var(--small-size); }
+.event-grid, .news-grid { grid-template-columns: repeat(3, 1fr); }
+.event-card { border-top: 4px solid var(--vivid-green); }
+.event-card__date, .news-card > span { color: var(--dark-green); font-size: var(--label-size); font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.event-card a { display: inline-block; margin-top: 1.25rem; font-size: var(--small-size); }
+.masjid-section { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 4rem; background: var(--dark-green); color: var(--white); }
+.masjid-section h2, .masjid-section p { color: var(--white); }
+.masjid-section p { opacity: .85; }
+.masjid-section__visual { min-height: 17rem; display: grid; place-items: center; align-content: center; gap: 1rem; border: 1px solid rgba(255,255,255,.25); border-radius: var(--card-radius); }
+.masjid-section__visual i { font-size: 5rem; color: var(--light-green); }
+.masjid-section__visual span { font-weight: 700; }
+.first-year-section, .join-section { display: flex; align-items: center; justify-content: space-between; gap: 2rem; background: var(--green-tint); }
+.join-section { display: block; text-align: center; background: var(--surface-alt); }
+.join-section h2 { margin-left: auto; margin-right: auto; }
+.join-section .button { margin-top: 1rem; }
+@media (max-width: 767px) {
+  .mumsa-hero, .home-section--welcome, .section-heading--row, .masjid-section, .first-year-section { display: block; }
+  .mumsa-hero__visual { margin-top: 2rem; min-height: 16rem; }
+  .home-section__copy { margin-top: 1.5rem; }
+  .core-area-grid, .event-grid, .news-grid { grid-template-columns: 1fr; }
+  .section-heading--row .text-link { display: inline-block; margin-top: 1rem; }
+  .masjid-section__copy, .first-year-section .button { margin-top: 2rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .core-area-card, .event-card, .news-card { transition: none; }
+}
 .activities-grid-container {
   background: var(--white);
 }

@@ -2,11 +2,15 @@
 
 :root {
   /* Colors */
-  --dark-green: hsl(145, 69%, 25%);
-  --vivid-green: hsl(152, 84%, 31%);
-  --light-green: hsl(152, 84%, 78%);
-  --distant-green: hsl(152, 84%, 98%);
-  --green-tint: hsl(145, 40%, 94%);
+  --dark-green: hsl(150, 55%, 22%);
+  --vivid-green: hsl(151, 62%, 34%);
+  --light-green: hsl(151, 45%, 78%);
+  --distant-green: hsl(150, 45%, 98%);
+  --green-tint: hsl(150, 35%, 94%);
+  --surface: hsl(150, 20%, 97%);
+  --surface-alt: hsl(42, 30%, 97%);
+  --ink: hsl(155, 28%, 13%);
+  --focus-ring: hsl(151, 62%, 34%);
 
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -30,7 +34,7 @@
   --danger-text: hsl(0, 72%, 32%);
 
   /* Font */
-  --font: "Inter Variable", Helvetica, sans-serif;
+  --font: "Inter Variable", Inter, Helvetica, sans-serif;
 
   /* Font sizes */
   --display-size: 2.6rem;
@@ -83,8 +87,8 @@ html {
 }
 body {
   font-family: var(--font);
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--surface);
+  color: var(--ink);
 }
 
 a {
@@ -102,7 +106,7 @@ main {
 }
 
 h1, h2, h3, p {
-  color: var(--black);
+  color: var(--ink);
 }
 h1 {
   font-size: var(--h1-size);
@@ -131,6 +135,15 @@ p {
 
 .section {
   padding: var(--section-padding) !important;
+}
+
+button, input, textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
 }
 
 /* ── Shared: Section Labels ───────────────── */
@@ -162,7 +175,11 @@ p {
   align-items: center;
   width: fit-content;
   box-shadow: var(--shadow);
-  transition: background-color 0.18s ease;
+  transition: background-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+.button:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
 }
 .button span {
   font-size: var(--small-size);
@@ -177,7 +194,7 @@ p {
   border: 1px solid var(--dark-green);
 }
 .alt-button span {
-  color: var(--dark-green)
+  color: var(--dark-green);
 }
 
 /* Quote */
