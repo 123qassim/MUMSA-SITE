@@ -39,6 +39,8 @@
 .masjid-direction-card i { color: #d8f0df; font-size: 2rem; margin-bottom: 1rem; }
 .masjid-direction-card h3, .masjid-direction-card p { color: var(--white); }
 .masjid-direction-card p { font-size: var(--small-size); }
+.masjid-map-link { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.25rem; padding: .7rem .9rem; border-radius: .55rem; background: var(--white); color: var(--dark-green); font-size: var(--small-size); font-weight: 800; text-decoration: none; }
+.masjid-map-link:hover { background: #d8f0df; }
 .guideline-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
 .guideline-grid > div { padding: 1.25rem; border: 1px solid var(--grey); border-radius: var(--card-radius); background: var(--white); }
 .guideline-grid i { color: var(--vivid-green); font-size: 1.3rem; margin-bottom: 1rem; }
